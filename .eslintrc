@@ -19,6 +19,7 @@
   "rules": {
     "prettier/prettier": "error",
     "import/prefer-default-export": "off",
+    "no-underscore-dangle": "off",
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
@@ -50,13 +51,16 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",
+        "react/no-danger": "off",
+        "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+          "single",
           {
             "avoidEscape": true
           }
-        ]
+        ],
+        "object-curly-newline": "off"
       }
     }
   ],

@@ -1,22 +1,23 @@
 {
-  "name": "gatsby-starter-ts",
-  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
+  "name": "felipedev",
+  "description": "Felipe Jung's Site",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <oi@joaopedro.cc> (joaopedro.cc)",
+  "author": "Felipe Jung",
   "license": "MIT",
   "keywords": [
     "gatsby",
-    "starter",
-    "typescript"
+    "typescript",
+    "blog"
   ],
   "scripts": {
     "start": "gatsby develop",
+    "start:playground": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "type-check": "tsc",
-    "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
+    "lint": "eslint --ignore-path .eslintignore .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write"
   },
   "husky": {
@@ -33,9 +34,36 @@
     ]
   },
   "dependencies": {
+    "@styled-icons/boxicons-logos": "^10.6.0",
+    "@styled-icons/boxicons-regular": "^10.6.0",
+    "@styled-icons/boxicons-solid": "^10.6.0",
+    "algoliasearch": "^4.3.1",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.22.5",
+    "gatsby-image": "^2.4.13",
+    "gatsby-plugin-algolia-search": "^0.5.7",
+    "gatsby-plugin-manifest": "^2.4.21",
+    "gatsby-plugin-offline": "^3.2.21",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sharp": "^2.6.22",
+    "gatsby-plugin-sitemap": "^2.4.11",
+    "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-plugin-transition-link": "^1.20.2",
+    "gatsby-remark-images": "^3.3.21",
+    "gatsby-remark-lazy-load": "^1.0.2",
+    "gatsby-remark-prismjs": "^3.5.10",
+    "gatsby-remark-relative-images": "^0.3.0",
+    "gatsby-source-filesystem": "^2.3.23",
+    "gatsby-transformer-remark": "^2.8.27",
+    "gatsby-transformer-sharp": "^2.5.11",
+    "gsap": "^3.4.2",
+    "lazysizes": "^5.2.2",
+    "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.7.0",
+    "styled-components": "^5.1.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0"
   },
   "devDependencies": {
@@ -44,6 +72,8 @@
     "@types/node": "^13.11.0",
     "@types/react": "^16.9.32",
     "@types/react-dom": "^16.9.6",
+    "@types/react-helmet": "^6.0.0",
+    "@types/styled-components": "^5.1.1",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "babel-plugin-root-import": "^6.5.0",
@@ -61,6 +91,7 @@
     "husky": "^4.2.3",
     "lint-staged": "^10.1.2",
     "prettier": "^2.0.4",
+    "prop-types": "^15.7.2",
     "typescript": "^3.8.3"
   },
   "config": {
