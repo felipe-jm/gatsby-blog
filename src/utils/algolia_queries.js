@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const postsQuery = `{
   posts: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }){
     edges {
@@ -8,13 +10,12 @@ const postsQuery = `{
         }
         frontmatter {
           title
-          category
           background
+          category
           date_timestamp: date
           date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
           description
         }
-        timeToRead
         excerpt(pruneLength: 5000)
       }
     }
