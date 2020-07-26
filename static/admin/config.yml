@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: felipe-jm/felipejung.dev
+  branch: master
+  site_domain: https://felipejung-dev.netlify.app
+
+publish_mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY--MM-DD hh:mm:ss"
+        }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["ts", "js", "dev", "react", "nodejs", "gatsby", "nextjs"]
+        }
+      - {
+        label: "Background",
+        name: "background",
+        widget: "select",
+        options: [
+          { label: "TS", value: "#007ACC" },
+          { label: "JS", value: "#F0DB4F" },
+          { label: "Dev", value: "#637A91" },
+          { label: "React", value: "#61DBFB" },
+          { label: "Node", value: "#3C873A" },
+          { label: "Gatsby", value: "#663399" },
+          { label: "Next", value: "#111" },
+        ]
+      }
+      - {label: "Body", name: "body", widget: "markdown"}
