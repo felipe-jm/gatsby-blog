@@ -43,7 +43,7 @@ interface PostProps {
       date: string;
       image: string;
     };
-    timeToRead: string;
+    timeToRead: number;
     html: string;
   };
 }

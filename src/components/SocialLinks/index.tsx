@@ -12,8 +12,8 @@ const SocialLinks: React.FC = () => (
         const Icon = Icons[link.label];
 
         return (
-          <S.SocialLinksItem key={link.label}>
-            <S.SocialLinksLink
+          <li key={link.label}>
+            <a
               href={link.url}
               title={link.label}
               target="_blank"
@@ -22,8 +22,8 @@ const SocialLinks: React.FC = () => (
               <S.IconWrapper>
                 <Icon />
               </S.IconWrapper>
-            </S.SocialLinksLink>
-          </S.SocialLinksItem>
+            </a>
+          </li>
         );
       })}
     </S.SocialLinksList>

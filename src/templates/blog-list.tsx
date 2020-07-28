@@ -8,6 +8,32 @@ import Pagination from '@/components/Pagination';
 
 import * as S from '@/components/ListWrapper/styles';
 
+export const query = graphql`
+  query PostsList($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+            background
+            category
+            date(locale: "pt-BR", formatString: "DD [de] MMMM [de] YYYY")
+          }
+          timeToRead
+        }
+      }
+    }
+  }
+`;
+
 interface BlogList {
   data: PostListProps;
   pageContext: {
@@ -44,7 +70,7 @@ const BlogList: React.FC<BlogList> = ({
               background={background}
               category={category}
               date={date}
-              timeToRead={timeToRead}
+              timeToRead={Number(timeToRead)}
               title={title}
               description={description}
             />
@@ -63,31 +89,5 @@ const BlogList: React.FC<BlogList> = ({
     </Layout>
   );
 };
-
-export const query = graphql`
-  query PostsList($skip: Int!, $limit: Int!) {
-    allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            description
-            background
-            category
-            date(locale: "pt-BR", formatString: "DD [de] MMMM [de] YYYY")
-          }
-          timeToRead
-        }
-      }
-    }
-  }
-`;
 
 export default BlogList;

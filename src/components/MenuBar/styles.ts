@@ -16,11 +16,13 @@ export const MenuBarWrapper = styled.aside`
   transition: background 0.5s;
 
   @media (max-width: 1170px) {
+    border: 0;
     border-top: 1px solid var(--borders);
-    bottom: 0;
+    bottom: -3px;
     flex-direction: row;
     height: auto;
     padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
     position: fixed;
     width: 100%;
   }

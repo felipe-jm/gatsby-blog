@@ -5,7 +5,8 @@ export const SocialLinksWrapper = styled.nav`
   width: 100%;
 
   @media (max-width: 1170px) {
-    display: none;
+    order: 2;
+    margin: 0 0 1rem;
   }
 `;
 
@@ -14,17 +15,21 @@ export const SocialLinksList = styled.ul`
   display: flex;
   justify-content: center;
   list-style: none;
-`;
 
-export const SocialLinksItem = styled.li``;
+  margin-bottom: 1.5rem;
 
-export const SocialLinksLink = styled.a`
-  color: var(--texts);
-  text-decoration: none;
-  transition: color 0.5s;
+  @media (max-width: 1170px) {
+    justify-content: space-around;
+  }
 
-  &:hover {
-    color: var(--highlight);
+  a {
+    color: var(--texts);
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: var(--highlight);
+    }
   }
 `;
 
@@ -32,4 +37,9 @@ export const IconWrapper = styled.div`
   fill: #bbb;
   width: 30px;
   height: 30px;
+
+  @media (max-width: 1170px) {
+    width: 40px;
+    height: 40px;
+  }
 `;

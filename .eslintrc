@@ -21,7 +21,10 @@
     "import/prefer-default-export": "off",
     "no-underscore-dangle": "off",
     "react/prop-types": "off",
+    "no-confusing-arrow": "off",
+    "implicit-arrow-linebreak": "off",
     "react/jsx-filename-extension": "off",
+    "indent": "off",
     "react/jsx-props-no-spreading": "off",
     "import/extensions": [
       "error",

@@ -5,6 +5,7 @@ export const LayoutWrapper = styled.section`
 
   @media (max-width: 1170px) {
     flex-direction: column;
+    padding-top: 4.125rem;
   }
 `;
 
@@ -12,7 +13,7 @@ export const LayoutMain = styled.main`
   background: var(--background);
   min-height: 100vh;
   padding: 0 3.75rem 0 20rem;
-  transition: background, color 0.5s;
+  transition: background 0.5s;
   width: 100%;
 
   body#grid & {
@@ -20,6 +21,6 @@ export const LayoutMain = styled.main`
   }
 
   @media (max-width: 1170px) {
-    padding: 4.125rem 0 3rem 0;
+    padding: 0 0 3rem 0;
   }
 `;

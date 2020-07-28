@@ -1,10 +1,24 @@
 import styled from 'styled-components';
 import AnyLink from 'gatsby-plugin-transition-link/AniLink';
 
-export const ProfileWrapper = styled.section`
+interface ProfileWrapperProps {
+  isMobileHeader: boolean;
+}
+
+export const ProfileWrapper = styled.section<ProfileWrapperProps>`
+  display: ${({ isMobileHeader }) => (isMobileHeader ? 'none' : 'flex')};
   color: var(--texts);
-  display: flex;
   flex-direction: column;
+
+  @media (max-width: 1170px) {
+    flex-direction: row;
+    justify-content: space-between;
+    display: ${({ isMobileHeader }) => (isMobileHeader ? 'flex' : 'none')};
+    background: var(--mediumBackground);
+    border-bottom: 1px solid var(--borders);
+    padding: 1rem;
+    width: 100vw;
+  }
 `;
 
 export const ProfileLink = styled(AnyLink)`
@@ -12,13 +26,13 @@ export const ProfileLink = styled(AnyLink)`
   text-decoration: none;
   transition: color 0.5s;
 
-  @media (max-width: 1170px) {
-    display: flex;
-    text-align: left;
-  }
-
   &:hover {
     color: var(--highlight);
+  }
+
+  @media (max-width: 1170px) {
+    display: flex;
+    align-items: center;
   }
 `;
 
@@ -50,5 +64,44 @@ export const ProfileDescription = styled.section`
 
   @media (max-width: 1170px) {
     display: none;
+  }
+`;
+
+export const MobileNav = styled.div`
+  display: none;
+
+  @media (max-width: 1170px) {
+    display: block;
+  }
+`;
+
+export const MenuBarItem = styled.span`
+  color: var(--texts);
+  cursor: pointer;
+  display: block;
+  height: 3.75rem;
+  padding: 1.1rem;
+  position: relative;
+  width: 3.75rem;
+
+  &:hover {
+    color: var(--highlight);
+  }
+
+  &.display {
+    @media (max-width: 1170px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1170px) {
+    height: 3.2rem;
+    padding: 0.9rem;
+    position: relative;
+    width: 3.2rem;
+
+    &:hover {
+      color: var(--highlight);
+    }
   }
 `;
