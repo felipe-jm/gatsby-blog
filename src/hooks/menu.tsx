@@ -18,10 +18,15 @@ const MenuProvider: React.FC = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = useCallback(() => {
+    console.log({ isMenuOpen });
     setIsMenuOpen(!isMenuOpen);
   }, [isMenuOpen]);
 
-  const value = useMemo(() => ({ isMenuOpen, setIsMenuOpen, toggleMenu }), []);
+  const value = useMemo(() => ({ isMenuOpen, setIsMenuOpen, toggleMenu }), [
+    isMenuOpen,
+    setIsMenuOpen,
+    toggleMenu,
+  ]);
 
   return <MenuContext.Provider value={value}>{children}</MenuContext.Provider>;
 };

@@ -1,7 +1,3 @@
-import React from 'react';
+import wrapWithContext from './wrap-with-context';
 
-import { MenuProvider } from '@/hooks/menu';
-
-export const wrapRootElement = ({ element }) => (
-  <MenuProvider>{element}</MenuProvider>
-);
+export const wrapRootElement = wrapWithContext;

@@ -4,6 +4,10 @@ interface SidebarWrapperProps {
   isMenuOpen: boolean;
 }
 
+export const SidebarContainer = styled.div`
+  transition: all 0.5s;
+`;
+
 export const SidebarWrapper = styled.aside<SidebarWrapperProps>`
   align-items: center;
   border-right: 1px solid var(--borders);
@@ -15,7 +19,7 @@ export const SidebarWrapper = styled.aside<SidebarWrapperProps>`
   padding: 2rem;
   text-align: center;
   width: 20rem;
-  transition: background 0.5s;
+  transition: all 0.5s;
 
   @media (max-width: 1170px) {
     align-items: flex-start;

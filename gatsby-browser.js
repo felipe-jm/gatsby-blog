@@ -1,11 +1,7 @@
-import React from 'react';
-
 import 'lazysizes';
 
 import 'prismjs/themes/prism-tomorrow.css';
 
-import { MenuProvider } from '@/hooks/menu';
+import wrapWithContext from './wrap-with-context';
 
-export const wrapRootElement = ({ element }) => (
-  <MenuProvider>{element}</MenuProvider>
-);
+export const wrapRootElement = wrapWithContext;
