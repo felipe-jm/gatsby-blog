@@ -73,21 +73,21 @@ img {
 }
 
 body.dark {
-  --borders: #99aab5;
-  --texts: #ffffff;
-  --postColor: #ffffff;
-  --highlight: #7289da;
-  --mediumBackground: #2c2f33;
-  --background: #23272a;
-  --white: #ffffff;
-  --black: #23272a;
+  --borders: #333;
+  --texts: #fff;
+  --postColor: #fff;
+  --highlight: #45B786;
+  --mediumBackground: #1a1a1a;
+  --background: #121212;
+  --white: #fff;
+  --black: #121212;
 }
 
 body.light {
   --borders: #dedede;
   --postColor: #111;
   --texts: #555555;
-  --highlight: #7289da;
+  --highlight: #45B786;
   --mediumBackground: #f0f0f3;
   --background: #fff;
   --white: #fff;
