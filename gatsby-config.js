@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'Felipe Jung',
     position: 'Fullstack Developer',
-    description: 'Blog about web development and my learnings',
+    description: 'Blog sobre desenvolvimento fullstack e meus estudos',
     author: '@felipejung',
     siteUrl: 'https://felipejung-dev.netlify.app',
   },

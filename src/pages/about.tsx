@@ -1,10 +1,45 @@
 import React from 'react';
 import { PageProps } from 'gatsby';
+
+import SEO from '@/components/Seo';
+
 import Layout from '@/components/Layout';
+import * as S from '@/components/Post/styles';
 
 const AboutPage: React.FC<PageProps> = () => (
   <Layout>
-    <h1>About Page</h1>
+    <SEO
+      title="Sobre Mim"
+      description="Um estudante apaixonado por tecnologia e em busca de conhecimento"
+    />
+    <S.PostHeader>
+      <S.PostTitle>Sobre Mim</S.PostTitle>
+    </S.PostHeader>
+    <S.MainContent>
+      <p>
+        Meu nome é Felipe Jung de Mattos, nasci em{' '}
+        <a
+          href="https://www.google.com/maps/place/Cel.+Vivida,+PR,+85550-000/@-25.9872428,-52.5866414,14z/data=!3m1!4b1!4m5!3m4!1s0x94effa2862ada8f5:0xff166a2c67851c7a!8m2!3d-25.979821!4d-52.5678016?hl=pt-BR"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Coronel Vivida
+        </a>{' '}
+        no estado do Paraná e sou um estudante que entrou no mundo do
+        desenvolvimento há cerca de 3 anos.
+      </p>
+
+      <p>
+        Atualmente sou de Cuiabá (Mato Grosso) e comecei a me envolver no mundo
+        de tecnologia e desenvolvimento em um curso técnico de informática feito
+        no IFMT. Meu primeiro projeto &quotsério&quot foi um aplicativo feito em
+        Android Nativo que tinha o objetivo de facilitar a venda de trufas
+        dentro do campus{' '}
+        <span role="img" aria-label="Um emoji rindo">
+          😂
+        </span>
+      </p>
+    </S.MainContent>
   </Layout>
 );
 
