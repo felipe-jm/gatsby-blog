@@ -32,13 +32,31 @@ const AboutPage: React.FC<PageProps> = () => (
       <p>
         Atualmente sou de Cuiabá (Mato Grosso) e comecei a me envolver no mundo
         de tecnologia e desenvolvimento em um curso técnico de informática feito
-        no IFMT. Meu primeiro projeto &quotsério&quot foi um aplicativo feito em
-        Android Nativo que tinha o objetivo de facilitar a venda de trufas
+        no IFMT. Meu primeiro projeto &quot;sério&quot; foi um aplicativo feito
+        em Android Nativo que tinha o objetivo de facilitar a venda de trufas
         dentro do campus{' '}
         <span role="img" aria-label="Um emoji rindo">
           😂
         </span>
       </p>
+
+      <div style={{ display: 'flex' }}>
+        <img
+          src="/assets/img/about-me/iffood/screen1.png"
+          alt="Um celular com a descrição 'IFFOOD - Bem vindo - Digite o nome no campo abaixo para identificação', um input de texto para digitar o nome e um botão abaixo escrito 'REGISTRAR'"
+          height={24}
+          width={24}
+        />
+
+        <img
+          src="/assets/img/about-me/iffood/screen2.png"
+          alt="Um celular com uma listagem de trufas"
+          height={24}
+          width={24}
+        />
+      </div>
+
+      <hr />
     </S.MainContent>
   </Layout>
 );

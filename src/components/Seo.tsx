@@ -59,7 +59,7 @@ const SEO: React.FC<SEOProps> = ({
 
   const url = site.siteMetadata.siteUrl;
 
-  const ogImage = `${url}${image || '/assets/img/cover.png'}`;
+  const ogImage = `${url}${image || '/assets/img/logo.svg'}`;
 
   return (
     <Helmet
