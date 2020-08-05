@@ -5,6 +5,7 @@ import SEO from '@/components/Seo';
 
 import Layout from '@/components/Layout';
 import * as S from '@/components/Post/styles';
+import SocialLinks from '@/components/SocialLinks';
 
 const AboutPage: React.FC<PageProps> = () => (
   <Layout>
@@ -26,7 +27,7 @@ const AboutPage: React.FC<PageProps> = () => (
           Coronel Vivida
         </a>{' '}
         no estado do Paraná e sou um estudante que entrou no mundo do
-        desenvolvimento há cerca de 3 anos.
+        desenvolvimento em 2017.
       </p>
 
       <p>
@@ -44,19 +45,21 @@ const AboutPage: React.FC<PageProps> = () => (
         <img
           src="/assets/img/about-me/iffood/screen1.png"
           alt="Um celular com a descrição 'IFFOOD - Bem vindo - Digite o nome no campo abaixo para identificação', um input de texto para digitar o nome e um botão abaixo escrito 'REGISTRAR'"
-          height={24}
-          width={24}
         />
 
         <img
           src="/assets/img/about-me/iffood/screen2.png"
           alt="Um celular com uma listagem de trufas"
-          height={24}
-          width={24}
         />
       </div>
 
       <hr />
+
+      <p>
+        Faço Sistemas de Informação no UFMT - Campus Cuiabá e atualmente busco
+        cada vez mais aprofundar meus conhecimentos em ReactJS, React Native,
+        NodeJS e todo ecossistema ao redor dessas tecnologias.
+      </p>
     </S.MainContent>
   </Layout>
 );
