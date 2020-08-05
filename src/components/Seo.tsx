@@ -27,7 +27,7 @@ interface Meta {
 
 interface SEOProps {
   title: string;
-  description: string;
+  description?: string;
   lang?: string;
   meta?: Meta[];
   image?: string;

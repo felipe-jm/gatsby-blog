@@ -20,7 +20,7 @@ const Avatar: React.FC = () => {
         avatarImage: file(relativePath: { eq: "profile-pic.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 60) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }
