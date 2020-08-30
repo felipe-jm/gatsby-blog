@@ -1,11 +1,10 @@
-import React from 'react';
 import { useStaticQuery, graphql, PageProps, Link } from 'gatsby';
 import { FixedObject, FluidObject } from 'gatsby-image';
+import React from 'react';
 
-import GlobalStyles from '@/styles/global';
 import * as S from '@/components/NotFound/styles';
-
 import SEO from '@/components/Seo';
+import GlobalStyles from '@/styles/global';
 
 interface NotFoundImage {
   notFoundImage: {

@@ -14,7 +14,13 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
   "extends": ["plugin:react/recommended", "airbnb", "prettier/react"],
   "rules": {
     "prettier/prettier": "error",
@@ -63,7 +69,19 @@
             "avoidEscape": true
           }
         ],
-        "object-curly-newline": "off"
+        "object-curly-newline": "off",
+        "import-helpers/order-imports": [
+          "warn",
+          {
+            "newlinesBetween": "always",
+            "groups": [
+              "module",
+              "/^@/",
+              ["parent", "sibling", "index"]
+            ],
+            "alphabetize": { "order": "asc", "ignoreCase": true }
+          }
+        ]
       }
     }
   ],

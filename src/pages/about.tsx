@@ -1,11 +1,9 @@
-import React from 'react';
 import { PageProps } from 'gatsby';
-
-import SEO from '@/components/Seo';
+import React from 'react';
 
 import Layout from '@/components/Layout';
 import * as S from '@/components/Post/styles';
-import SocialLinks from '@/components/SocialLinks';
+import SEO from '@/components/Seo';
 
 const AboutPage: React.FC<PageProps> = () => (
   <Layout>
@@ -56,9 +54,8 @@ const AboutPage: React.FC<PageProps> = () => (
       <hr />
 
       <p>
-        Faço Sistemas de Informação no UFMT - Campus Cuiabá e atualmente busco
-        cada vez mais aprofundar meus conhecimentos em ReactJS, React Native,
-        NodeJS e todo ecossistema ao redor dessas tecnologias.
+        Atualmente busco cada vez mais aprofundar meus conhecimentos em ReactJS,
+        React Native, NodeJS e todo ecossistema ao redor dessas tecnologias.
       </p>
     </S.MainContent>
   </Layout>
