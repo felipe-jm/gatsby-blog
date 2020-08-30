@@ -1,5 +1,5 @@
-import React from 'react';
 import AnyLink from 'gatsby-plugin-transition-link/AniLink';
+import React from 'react';
 
 import getThemeColor from '@/utils/getThemeColor';
 

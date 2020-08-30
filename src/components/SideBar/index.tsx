@@ -1,10 +1,11 @@
 import React from 'react';
+
 import { useMenu } from '@/hooks/menu';
+
+import MenuLinks from '../MenuLinks';
 import Profile from '../Profile';
 import SocialLinks from '../SocialLinks';
-
 import * as S from './styles';
-import MenuLinks from '../MenuLinks';
 
 const Sidebar: React.FC = () => {
   const { isMenuOpen } = useMenu();

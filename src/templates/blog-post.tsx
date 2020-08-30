@@ -1,8 +1,7 @@
-import React from 'react';
 import { graphql } from 'gatsby';
+import React from 'react';
 
 import Layout from '@/components/Layout';
-
 import * as S from '@/components/Post/styles';
 import RecommendedPosts from '@/components/RecommendedPosts';
 import SEO from '@/components/Seo';

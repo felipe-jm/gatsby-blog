@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import Img from 'gatsby-image';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, 'San Francisco',

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import AnyLink from 'gatsby-plugin-transition-link/AniLink';
+import styled from 'styled-components';
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--borders);

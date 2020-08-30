@@ -1,12 +1,11 @@
-import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Menu } from '@styled-icons/boxicons-regular/Menu';
+import React from 'react';
 
 import Avatar from '@/components/Avatar';
-
-import getThemeColor from '@/utils/getThemeColor';
-
 import { useMenu } from '@/hooks/menu';
+import getThemeColor from '@/utils/getThemeColor';
+import { Menu } from '@styled-icons/boxicons-regular/Menu';
+
 import * as S from './styles';
 
 interface Profile {

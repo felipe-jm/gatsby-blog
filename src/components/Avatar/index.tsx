@@ -1,6 +1,6 @@
-import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FixedObject, FluidObject } from 'gatsby-image';
+import React from 'react';
 
 import * as S from './styles';
 

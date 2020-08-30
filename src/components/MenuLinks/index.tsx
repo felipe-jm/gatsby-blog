@@ -1,9 +1,9 @@
 import React from 'react';
 
-import getThemeColor from '@/utils/getThemeColor';
 import { useMenu } from '@/hooks/menu';
-import links from './content';
+import getThemeColor from '@/utils/getThemeColor';
 
+import links from './content';
 import * as S from './styles';
 
 const MenuLinks: React.FC = () => {
