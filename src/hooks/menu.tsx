@@ -18,7 +18,6 @@ const MenuProvider: React.FC = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = useCallback(() => {
-    console.log({ isMenuOpen });
     setIsMenuOpen(!isMenuOpen);
   }, [isMenuOpen]);
 

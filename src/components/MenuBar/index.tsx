@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-import { Sun } from '@styled-icons/boxicons-solid/Sun';
-import { Moon } from '@styled-icons/boxicons-solid/Moon';
-import { HomeCircle as Home } from '@styled-icons/boxicons-solid/HomeCircle';
+import getThemeColor from '@/utils/getThemeColor';
+import { ListUl as List } from '@styled-icons/boxicons-regular/ListUl';
 import { SearchAlt as Search } from '@styled-icons/boxicons-regular/SearchAlt';
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt';
 import { Grid } from '@styled-icons/boxicons-solid/Grid';
-import { ListUl as List } from '@styled-icons/boxicons-regular/ListUl';
-
-import getThemeColor from '@/utils/getThemeColor';
+import { HomeCircle as Home } from '@styled-icons/boxicons-solid/HomeCircle';
+import { Moon } from '@styled-icons/boxicons-solid/Moon';
+import { Sun } from '@styled-icons/boxicons-solid/Sun';
 
 import * as S from './styles';
 

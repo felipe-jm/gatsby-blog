@@ -29,7 +29,7 @@ export const SidebarWrapper = styled.aside<SidebarWrapperProps>`
     position: inherit;
     width: 100%;
     transform: ${({ isMenuOpen }) =>
-      isMenuOpen ? 'translateX(0)' : 'translateX(-100vw)'};
+      isMenuOpen ? 'translateX(0)' : 'translateX(100vw)'};
   }
 `;
 

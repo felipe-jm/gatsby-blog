@@ -1,6 +1,6 @@
-import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { FixedObject, FluidObject } from 'gatsby-image';
+import React from 'react';
 
 import * as S from './styles';
 
@@ -20,7 +20,7 @@ const Avatar: React.FC = () => {
         avatarImage: file(relativePath: { eq: "profile-pic.jpeg" }) {
           childImageSharp {
             fluid(maxWidth: 60) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }

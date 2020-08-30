@@ -1,8 +1,7 @@
 import React from 'react';
 
-import Icons from './icons';
 import links from './content';
-
+import Icons from './icons';
 import * as S from './styles';
 
 const SocialLinks: React.FC = () => (

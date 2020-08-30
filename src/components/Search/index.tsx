@@ -1,9 +1,9 @@
-import React from 'react';
 import algoliasearch from 'algoliasearch/lite';
+import React from 'react';
 import { InstantSearch, SearchBox, Hits, Stats } from 'react-instantsearch-dom';
 
-import * as S from './styles';
 import Hit from './Hit';
+import * as S from './styles';
 
 const algolia = {
   appid: process.env.GATSBY_ALGOLIA_APP_ID,

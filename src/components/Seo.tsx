@@ -5,9 +5,9 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
 
 interface SiteProps {
   site: {
@@ -27,7 +27,7 @@ interface Meta {
 
 interface SEOProps {
   title: string;
-  description: string;
+  description?: string;
   lang?: string;
   meta?: Meta[];
   image?: string;
@@ -59,7 +59,7 @@ const SEO: React.FC<SEOProps> = ({
 
   const url = site.siteMetadata.siteUrl;
 
-  const ogImage = `${url}${image || '/assets/img/cover.png'}`;
+  const ogImage = `${url}${image || '/assets/img/logo.svg'}`;
 
   return (
     <Helmet

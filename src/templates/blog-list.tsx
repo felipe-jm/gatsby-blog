@@ -1,12 +1,10 @@
-import React from 'react';
 import { graphql } from 'gatsby';
+import React from 'react';
 
 import Layout from '@/components/Layout';
-import PostItem from '@/components/PostItem';
-
-import Pagination from '@/components/Pagination';
-
 import * as S from '@/components/ListWrapper/styles';
+import Pagination from '@/components/Pagination';
+import PostItem from '@/components/PostItem';
 
 export const query = graphql`
   query PostsList($skip: Int!, $limit: Int!) {

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
 import AnyLink from 'gatsby-plugin-transition-link/AniLink';
+import styled from 'styled-components';
 
 export const MenuLinksWrapper = styled.nav`
   @media (max-width: 1170px) {
